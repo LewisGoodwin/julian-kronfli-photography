@@ -1,0 +1,262 @@
+:root {
+  --text-gold:#DBBC37;
+  --text-grey:#9FA3A1;
+}
+
+body {
+  font-family:'Lato', sans-serif;
+}
+
+h3 {
+  letter-spacing: 0.05em;
+}
+
+.capital {
+  color: var(--text-grey);
+  font-weight: bold;
+  font-size: 1.2em !important;
+}
+
+.text-gold {
+  color:var(--text-gold);
+}
+
+.text-grey {
+  color: var(--text-grey);
+}
+
+header ul {
+  margin-bottom: 0;
+}
+
+#main {
+  position: relative;
+  min-height: 400px;
+}
+
+#main .gallery {
+  display:none;
+}
+
+#main .gallery img {
+  width: auto;
+  height:400px;
+}
+
+#main .gallery-cell {
+  margin-right: 0.5em;
+}
+
+
+#content {
+  font-size: 0.75em;
+}
+
+.copyright {
+  text-align: center;
+  font-size:1em;
+}
+
+.copyright span:first-of-type {
+  font-size: 0.875em;
+}
+
+#galleries {
+  font-size: 0.8em;
+}
+
+#galleries h5 {
+  display: inline;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+}
+
+.nav {
+  text-align: center;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+}
+
+.nav .active {
+  border: 3px solid var(--text-gold);
+}
+.nav-item {
+  cursor: pointer;
+}
+
+.nav-item:nth-child(odd) {
+  background-color: #eee;
+}
+
+.nav-item img {
+  display: none;
+  min-height: 80px;
+  max-height: 130px;
+}
+
+#commercials {
+  display: none;
+  text-align: center;
+  height: 400px;
+}
+
+#commercials img {
+  margin: 0 auto;
+  display: block;
+}
+
+#commercials iframe{
+  border:0;
+  margin:0;
+  height: 90%;
+  width: 100%;
+  display: block;
+}
+
+#commercials img {
+  border-radius: 4px;
+  opacity: 0.8;
+}
+
+#commercials img:hover{
+  opacity: 1;
+}
+
+
+#about-section {
+  display: none;
+  height:400px;
+  font-size: 0.8em;
+}
+
+#loading {
+  position: absolute;
+  width:80px;
+  height:80px;
+  top:50%;
+  left:50%;
+  margin: -80px 0 0 -40px;
+  text-align: center;
+}
+
+#about1 {
+  height:240px;
+  width:100%;
+}
+
+#about2 {
+  height:155px;
+  width:100%;
+}
+
+#about3 {
+  height:100%;
+  width:100%;
+}
+
+.scroll{overflow-y: scroll;}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (max-width: 543px) { 
+  html{font-size: 0.875rem;}
+
+  header {
+    font-size: 0.8em;
+  }
+
+  header img {
+    width: 200px;
+  } 
+
+
+}
+
+@media (min-width: 544px) { 
+  html{font-size: 0.875rem;}
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) { 
+  html{font-size: 1rem;} 
+  
+  .nav {
+    font-size: 1.3em;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  html{font-size: 1rem;} 
+  
+  .nav {
+    font-size: 0.75em;
+  }
+
+  .nav-item {
+    background:none !important;
+    border:0 !important;
+  }
+  
+  .nav-item img {
+    display: block;
+  }
+  
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1370px;
+  }
+
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1570px;
+  }
+
+  #content {
+    font-size: 1em;
+  }
+
+  #main {
+    min-height: 500px;
+  }
+
+  #main .gallery img {
+    width: auto;
+    height:500px;
+  }
+
+  #commercials, #about-section {
+    height: 500px;
+  }
+
+  #about1 {
+    height:300px;
+    width:100%;
+  }
+
+  #about2 {
+    height:195px;
+    width:100%;
+  }
+
+  #about3 {
+    height:100%;
+    width:100%;
+  }
+
+}
+
+@media screen and (min-width: 1900px) {
+  .container {
+    width: 1870px;
+  }
+}
