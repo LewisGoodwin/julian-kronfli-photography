@@ -132,8 +132,25 @@ function setupPageText(id) {
    $("#" + id).css("border","3px solid #DBBC37");    
  }
 
- $('#page').text($("#" + id + " p").html());
+ $('#page').html(getPageTitle(id));
  $('.main').text(getPageInfo(id));
+}
+
+function getPageTitle(id) {
+  var pageText = [];  
+  pageText["home"] ='<span class="capital text-gold">H</span>ome';
+  pageText["portrait"] ='<span class="capital text-gold">P</span>ortraits';
+  pageText["children"] ='<span class="capital text-gold">C</span>hildren';
+  pageText["location"] ='<span class="capital text-gold">L</span>ocation';
+  pageText["events"] ='<span class="capital text-gold">E</span>vents';
+  pageText["macro"] ='<span class="capital text-gold">M</span>acro';
+  pageText["nature"] ='<span class="capital text-gold">N</span>ature';
+  pageText["corporate"] ='<span class="capital text-gold">C</span>orporate';
+  pageText["fashion"] ='<span class="capital text-gold">F</span>ashion';
+  pageText["wire"] ='<span class="capital text-gold">W</span>ire';
+  pageText["tv"] ='<span class="capital text-gold">TV</span> Commercials';
+  pageText["about"] ='<span class="capital text-gold">A</span>bout';
+  return pageText[id];
 }
 
 function getPageInfo(id) {
